@@ -346,7 +346,9 @@ h2, h3 {
 }
 
 .proposes-text {
-   display: block;
+   display: flex;
+   flex-direction: column;
+   justify-content: left;
    height: auto;
    max-width: 600px;
 }
@@ -527,6 +529,176 @@ h2, h3 {
 }
 
 /* End of Lysol Hop */
+
+
+
+/* ========== Products Page ========== */
+
+
+#pano-products {
+   height: 350px;
+   background-image: url(../images/products_main.jpg);
+   background-repeat: no-repeat;
+   background-position: center;
+   /* padding-top: 30px; */
+}
+
+#infoFrost-products {
+   padding: 130px;
+   height: 300px;
+   max-width: 1366px;
+   color: #fff;
+}
+
+
+#infoFrost-products h2 {
+   text-align: left;
+   font-size: 3.5em;
+   font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+   color: #fff;
+}
+
+
+/* dynamic products */
+
+.fas {
+   font-size: 2em;
+   color: #fff;
+   cursor: pointer;
+}
+
+/* body {
+   display: flex;
+   flex-direction: column;
+   justify-content: center;
+   background-image: url(../images/Lysol_beer_render_bottle_04.jpg);
+   background-repeat: no-repeat;
+   background-position: fixed;
+   background-size: cover;
+   background-color: #fff;
+   height: auto;
+   font-size: 15px;
+} */
+
+.productsBody h1 {
+   display: flex;
+   justify-content: center;
+   font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+   color: #fe0000;
+   margin-top: 5px;
+   font-size: 2.5em;
+   font-weight: 600;
+}
+
+main {
+   position: relative;
+   width: 100%;
+   text-align: center;
+}
+
+.bodyContainer {
+   display: flex;
+   flex-direction: column;
+   justify-content: center;
+   background-color: rgba(255, 255, 255, 0.8);
+}
+
+#imageContainer {
+   width: 600px;
+   height: 360px;
+   margin: 70px auto 0 auto;
+   overflow: hidden;
+   border-radius: 20px;
+   box-shadow: 0 8px 32px 0 rgba(0, 0, 5, 0.9);
+}
+
+.teamContainer {
+   display: flex;
+   flex-direction: column;
+   justify-content: center;
+   margin-top: 0px;
+   height: auto;
+}
+
+.teamMemberInfo {
+   color: #7d7d7d;
+   width: 70%;
+   font-family: 'Franklin Gothic book', 'Arial Narrow', Arial, sans-serif;
+   font-size: 1.1em;
+   line-height: 25px;
+   color: #000;
+   margin: 20px auto;
+   margin-top: 2em;
+   margin-bottom: 50px;
+
+   width: 800px;
+   text-align: left;
+}
+
+#productsImages {
+   position: relative;
+   width: 7000px;
+   transition: all .5s;
+}
+
+#productsImages img {
+   float: left;
+}
+
+#bottomNav {
+   display: flex;
+   justify-content: center;
+   margin-top: 40px;
+}
+
+#navList li {
+   display: inline;
+   list-style-type: none;
+   padding: 0px 10px;
+   cursor: pointer;
+}
+
+.iconContainer {
+   width: 80px;
+   height: 80px;
+   display: inline-block;
+   overflow: hidden;
+   background-image: url(../images/dynamic_products_sprite.png);
+   background-repeat: no-repeat;
+   margin-bottom: 20px;
+   transition: transform .4s;
+   border-radius: 40px;
+}
+
+/* end default styles */
+
+/* image sprite */
+
+.sigilContainer:active {
+   background-color: rgba(0, 180, 230, 0.3);
+   box-shadow: 0px 0px 50px 25px rgba(1, 18, 22, 0.4);
+}
+
+.lysol-1 { background-position: 0px -80px; }
+.lysol-1:hover { background-position: 0px 0px; }
+
+.lysol-2 { background-position: -79.5px -80px; }
+.lysol-2:hover { background-position: -80px 0px; }
+
+.lysol-3 { background-position: -159px -80px; }
+.lysol-3:hover { background-position: -159px 0px; }
+
+/* end image sprite */
+
+
+
+
+
+
+
+
+
+
 
 
 /* Footer */
