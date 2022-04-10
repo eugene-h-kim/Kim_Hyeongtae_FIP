@@ -582,7 +582,9 @@ h2, h3 {
 
 .productsBody h1 {
    display: flex;
-   justify-content: center;
+   flex-wrap: wrap;
+   flex-direction: column;
+   align-items: center;
    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
    color: #fe0000;
    margin-top: 5px;
@@ -590,11 +592,15 @@ h2, h3 {
    font-weight: 600;
 }
 
-main {
+.productsBody .hidden {
+   display: none;
+}
+
+/* main {
    position: relative;
    width: 100%;
    text-align: center;
-}
+} */
 
 .bodyContainer {
    display: flex;
@@ -691,8 +697,51 @@ main {
 /* end image sprite */
 
 
+/* ========== Gallery Page ========== */
+
+#pano-gallery {
+   height: 350px;
+   background-image: url(../images/gallery_main.jpg);
+   background-repeat: no-repeat;
+   background-position: center;
+   /* padding-top: 30px; */
+}
+
+#infoFrost-gallery {
+   padding: 130px;
+   height: 300px;
+   max-width: 1366px;
+   color: #fff;
+}
+
+#infoFrost-gallery h2 {
+   text-align: left;
+   font-size: 3.5em;
+   font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+   color: #fff;
+}
+
+.gallery {
+   display: flex;
+   flex-wrap: wrap;
+   flex-direction: row;
+   justify-content: center;
+   align-items: center;
+   max-width: 100%;
+   height: 100%;
+}
+
+.gallery-1, .gallery-2, .gallery-3, .gallery-4 {
+   display: flex;
+   flex-wrap: wrap;
+   flex-direction: row;
+   justify-content: space-between;
+   align-items: flex-start;
+   margin: 20px;
+}
 
 
+/* ========== Contact Page ========== */
 
 
 
