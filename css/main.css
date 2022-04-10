@@ -246,7 +246,7 @@ h2, h3 {
    margin-top: 10px;
 }
 
-#getbeer {
+.getbeer {
    font-family: 'Franklin Gothic', 'Arial Narrow', Arial, sans-serif;
    display: block;
    width: 180px;
@@ -262,7 +262,7 @@ h2, h3 {
    margin-top: 50px;
 }
 
-#getbeer:hover {
+.getbeer:hover {
    background-color: #fe0000;
 }
 
